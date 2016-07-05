@@ -8,6 +8,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="../RES/js/jquery.min.js" type="text/javascript"></script>
+        <script src="../RES/js/jquery.js" type="text/javascript"></script>
+        <link href="../RES/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
