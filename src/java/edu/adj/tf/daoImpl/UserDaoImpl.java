@@ -7,6 +7,7 @@ package edu.adj.tf.daoImpl;
 
 import edu.adj.tf.dao.UserDao;
 import edu.adj.tf.dto.User;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,15 @@ public class UserDaoImpl implements UserDao{
         session.save(user1);
         session.getTransaction().commit();
         session.close();
+    }
+
+    public User login(User user) {
+        Session session = getSession();
+        session.beginTransaction();
+        Query query = (Query) session.getNamedQuery("User.findByEmail");
+        query.setString("email", user.getEmail());
+        User user1 = (User) query.uniqueResult();
+        return user1;
     }
     
 }

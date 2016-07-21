@@ -14,5 +14,5 @@ import edu.adj.tf.dto.User;
 public interface UserDao {
 
     public void addUser(User user1);
-    
+    public User login(User user);
 }

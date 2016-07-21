@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <jsp:include page="WEB-INF/FRONT/topFront.jsp"></jsp:include>
+        
+        <jsp:include page="WEB-INF/OTHER/questionList.jsp"></jsp:include>
     </body>
 </html>

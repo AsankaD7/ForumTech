@@ -8,6 +8,7 @@
     <class>edu.adj.tf.dto.Category</class>
     <class>edu.adj.tf.dto.Replyvote</class>
     <class>edu.adj.tf.dto.User</class>
+    <class>edu.adj.tf.dto.Categorydetail</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/forum?zeroDateTimeBehavior=convertToNull"/>
